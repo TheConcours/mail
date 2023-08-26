@@ -2,8 +2,8 @@
 
 # Constants
 User="DTS"
-Mailbox=`eval ~$User/Mailbox`
-Messages=`eval ~$User/messages`
+Mailbox=`eval echo ~$User/Mailbox`
+Messages=`eval echo ~$User/messages`
 DefaultThreshold=18 # in MB
 DefaultMax=20 # in MB
 Threshold=$DefaultThreshold
