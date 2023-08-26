@@ -1,8 +1,9 @@
 #!/bin/sh
 
 # Constants
-Mailbox=~/Mailbox
-Messages=~/messages
+User="DTS"
+Mailbox=~$User/Mailbox
+Messages=~$User/messages
 DefaultThreshold=18 # in MB
 DefaultMax=20 # in MB
 Threshold=$DefaultThreshold

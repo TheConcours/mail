@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Constants
-Mailbox=~/Mailbox
+User="DTS"
+Mailbox=~$User/Mailbox
 
 # Initialize
 rm -rf $Mailbox
