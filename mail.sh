@@ -24,11 +24,10 @@ done
 
 shift $((OPTIND-1))
 
-echo $Max
-echo $Threshold
+echo "Max MB: $Max"
+echo "THreshold MB: $Threshold"
 # Script body
 cd $Mailbox
-echo $PWD
 du -d 2 --block-size=1M . | grep "/maildir" | sed -e 's=\./==g' | sed -e 's=/.*==g' | \
 awk -v th="$Threshold" -v max="$Max" -v mes="$Messages" '{
   if ($1 >= th)
