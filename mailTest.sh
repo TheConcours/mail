@@ -2,7 +2,7 @@
 
 # Constants
 User="DTS"
-Mailbox=~$User/Mailbox
+Mailbox=`eval ~$User/Mailbox`
 
 # Initialize
 rm -rf $Mailbox
